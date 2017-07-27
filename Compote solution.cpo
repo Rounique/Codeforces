@@ -1,0 +1,16 @@
+#include <iostream>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+int main()
+{ 
+	//1 2 4 ratios
+    int a, b ,c;
+    cin >> a >> b >> c;
+    b /= 2;
+    c /= 4;
+    int t = min ( a , min ( b, c ) );
+    int ans = t + t*2 + t*4;
+    cout << ans;
+    return 0;
+}
