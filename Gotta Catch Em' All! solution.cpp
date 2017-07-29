@@ -28,5 +28,5 @@ int main()
 	a /= 2;
 	ans = min (B, min(u, min(l, min(b, min(a, min(r, ss))))));
 	cout << ans;
-
+	return 0;
 }
