@@ -3,8 +3,8 @@
 #include <math.h>
 #include <map>
 using namespace std;
-int a[100005];
-int b[100005];
+long long int a[100005];
+long long int b[100005];
 int main()
 {
 	int n, x;
@@ -15,8 +15,8 @@ int main()
 		a[x] += x;		
 	}
 	for (int i = 2; i <= 100000; ++i)
-    a[i] = max (a[i-1], a[i]+a[i-2]);	
+		a[i] = max (a[i-1], a[i]+a[i-2]);	
 
-  cout << a[100000];
+	cout << a[100000];
 	return 0;
 }
